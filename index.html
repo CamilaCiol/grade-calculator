@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">   
-<head>
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet.css">
+    
+    <link rel="shortcut icon" href="images/girl.svg" type="image/svg">
 </head>
 <body>
-    
-        <div class="top-bar">
-            <img class="logo " src="images/logo.svg" alt="woman's face between a html tag">
-        </div> 
+        <nav>
+            <div class="top-bar">
+                <img class="logo " src="images/logo-name.svg" alt="woman's face between a html tag">
+            </div> 
+        </nav>
         <section>
             <div class="grade-calculator">
                 <h1>Grade Calculator</h1>
                 <h3>Instructions</h3>
-                <p>Use this calculator to find out your avarage grande, and check if you pass your exames!
+                <p class="p-instructions">Use this calculator to find out your avarage grade, and check if you pass your exames!
                     All you need to do is insert your grandes into the form below and hit calculate. 
-                    If you don´t have enought room just click and add more rows. 
+                    If you don´t have enought room just click add more rows. 
                 </p>
             </div>
 
@@ -26,30 +29,51 @@
             </div>
 
         </section>  
-        
-        <section class="form-container">
-            
-            <div class="box">
-                <div class="form-input">
-                    <p for="a1">Assignment/Exam (optional)</p>
-                        <input name="Assignment/Exam" type="text" id="a1" />
-                        <input name="Assignment/Exam" type="text" id="a2" />
-                        <input name="Assignment/Exam" type="text" id="a3" />
-                </div>
 
-                <div class="form-input">
-                    <p for="a1">Grade</p>
-                        <input name="Grade" type="number" id="a1" />
-                        <input name="Grade" type="number" id="a1" />
-                        <input name="Grade" type="text" id="a1" />
-                </div>
+        <section>
+            <div class="grid-container">
+                <p><strong>Assignment/Exam (optional)</strong></p>
+                <p><strong>Grade</strong></p>
+                <div><input type="text" name="Exam" id="inp-1"></div>
+                <div><input type="number" name="Exam" id="inp-2"></div>
+                <div><input type="text" name="Exam" id="inp-3"></div>  
+                <div><input type="number" name="Exam" id="inp-4"></div>
+                <div><input type="text" name="Exam" id="inp-5"></div>
+                <div><input type="number" name="grExamade" id="inp-6"></div>
+                <div id="dynamicInput"><input type="text" name="myInputs[]"></div>
+                <div id="dynamicInput1"><input type="number" name="myInputs[]"></div>
 
+                <p class="full p-form" onClick="addInput('dynamicInput'); addInput1('dynamicInput1')" >+ add more rows</p>
+                <button class="full" onclick="calculateGrade()">Calculate</button>
+                    
+               
+                
+              </div>
+           
             </div>
 
-            <div>
-                <p>Final Grades</p>
-            </div>
-
+    
+                      
+            <div class="final-grades">
+                <div>
+                    <h3>Final Grades</h3>
+                </div>
+                <div >
+                    <p class="p-final-grades">Your current average grade is: <span id="average"></span></p>
+                    
+                    <p class="p-final-grades">Your final result is: <span id="result"></span></p>
+                </div>
+                <div>
+                    <h3>Undestanding your results:</h3>
+                    <p>1 - 59 = F </p>
+                    <p>60 - 69 = D </p>
+                    <p>70 - 79 = C </p>
+                    <p>80 - 89 = B </p>
+                    <p>90 - 100 = A </p>
+                </div>
+            </div>    
         </section>
+
+<script src="js.js"/>     
 </body>
 </html>
