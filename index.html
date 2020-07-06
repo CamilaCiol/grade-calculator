@@ -9,70 +9,70 @@
     <link rel="shortcut icon" href="images/girl.svg" type="image/svg">
 </head>
 <body>
-        <nav>
-            <div class="top-bar">
-                <img class="logo " src="images/logo-name.svg" alt="woman's face between a html tag">
-            </div> 
-        </nav>
-        <section>
-            <div class="grade-calculator">
-                <h1>Grade Calculator</h1>
-                <h3>Instructions</h3>
-                <p class="p-instructions">Use this calculator to find out your avarage grade, and check if you pass your exames!
-                    All you need to do is insert your grandes into the form below and hit calculate. 
-                    If you don´t have enought room just click add more rows. 
-                </p>
-            </div>
+       
 
-            <div class="vector-illustration">
-                <img src="images/vector-animation.png" alt="woman's face between a html tag" height="200px"; width="310px">
-            </div>
+        <div> 
+            <div class="nav">
+                        <div class="top-bar">
+                            <img class="logo " src="images/logo-name.svg" alt="woman's face between a html tag">
+                        </div> 
+             </div>
 
-        </section>  
+                <section class="boxes">
 
-        <section>
-            <div class="grid-container">
-                <p><strong>Assignment/Exam (optional)</strong></p>
-                <p><strong>Grade</strong></p>
-                <div><input type="text" name="Exam" id="inp-1"></div>
-                <div><input type="number" name="Exam" id="inp-2"></div>
-                <div><input type="text" name="Exam" id="inp-3"></div>  
-                <div><input type="number" name="Exam" id="inp-4"></div>
-                <div><input type="text" name="Exam" id="inp-5"></div>
-                <div><input type="number" name="grExamade" id="inp-6"></div>
-                <div id="dynamicInput"><input type="text" name="myInputs[]"></div>
-                <div id="dynamicInput1"><input type="number" name="myInputs[]"></div>
-
-                <p class="full p-form" onClick="addInput('dynamicInput'); addInput1('dynamicInput1')" >+ add more rows</p>
-                <button class="full" onclick="calculateGrade()">Calculate</button>
                     
+
+                    <div class="title">
+                        <h1>Grade Calculator</h1>
+                        <h3>Instructions</h3>
+                        <p class="p-instructions">Use this calculator to find out your avarage grade, and check if you pass your exames!
+                            All you need to do is insert your grandes into the form below and hit calculate. 
+                            If you don´t have enought room just click add more rows. 
+                        </p>
+                    </div>
+
+                    <div class="vector-illustration">
+                        <img src="images/vector-animation.png" height="200px"; width="310px">
+                    </div>
+
                
-                
-              </div>
-           
-            </div>
+                    <div class="grid-container">
+                        <p><strong>Assignment/Exam (optional)</strong></p>
+                        <p><strong>Grade</strong></p>
+                        <div><input type="text" name="Exam" id="inp-1"></div>
+                        <div><input type="number" name="Exam" id="inp-2"></div>
+                        <div><input type="text" name="Exam" id="inp-3"></div>  
+                        <div><input type="number" name="Exam" id="inp-4"></div>
+                        <div><input type="text" name="Exam" id="inp-5"></div>
+                        <div><input type="number" name="grExamade" id="inp-6"></div>
+                        <div id="dynamicInput"><input type="text" name="myInputs[]"></div>
+                        <div id="dynamicInput1"><input type="number" name="myInputs[]"></div>
 
-    
-                      
-            <div class="final-grades">
-                <div>
-                    <h3>Final Grades</h3>
-                </div>
-                <div >
-                    <p class="p-final-grades">Your current average grade is: <span id="average"></span></p>
-                    
-                    <p class="p-final-grades">Your final result is: <span id="result"></span></p>
-                </div>
-                <div>
-                    <h3>Undestanding your results:</h3>
-                    <p>1 - 59 = F </p>
-                    <p>60 - 69 = D </p>
-                    <p>70 - 79 = C </p>
-                    <p>80 - 89 = B </p>
-                    <p>90 - 100 = A </p>
-                </div>
-            </div>    
-        </section>
+                        <p class="full p-form" onClick="addInput('dynamicInput'); addInput1('dynamicInput1')" >+ add more rows</p>
+                        <button class="full" onclick="calculateGrade()">Calculate</button>
+                        
+                    </div>
+                              
+                    <div class="final-grades">
+                        <div>
+                            <h3>Final Grades</h3>
+                        </div>
+                        <div >
+                            <p class="p-final-grades">Your current average grade is: <span id="average"></span></p>
+                            
+                            <p class="p-final-grades">Your final result is: <span id="result"></span></p>
+                        </div>
+                        <div>
+                            <h3>Undestanding your results:</h3>
+                            <p>1 - 59 = F </p>
+                            <p>60 - 69 = D </p>
+                            <p>70 - 79 = C </p>
+                            <p>80 - 89 = B </p>
+                            <p>90 - 100 = A </p>
+                        </div>
+                    </div>    
+                </section>
+    </div>
 
 <script src="js.js"></script>     
 </body>
