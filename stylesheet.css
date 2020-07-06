@@ -92,13 +92,16 @@ section > div {
     
     margin-bottom: 20px;
 }
+}
+
+/* END @MEDIA */
 
 .illustration{
     display: grid;
     align-items: center;
     justify-items: center;
 }
-}
+
 
 .title{
       align-self: center;
