@@ -83,10 +83,13 @@ section > div {
   }
   .final-grades { margin-top: 30px; }
   .top-bar{ width: 95%; }
-  .grade-calculator, h1, h3{ margin-bottom: 20px; }
 }
 
 /* END @MEDIA */
+
+.grade-calculator, h1, h3{ 
+    margin-bottom: 20px; 
+}
 
 .title{
       align-self: center;
